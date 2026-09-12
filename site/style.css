@@ -1,0 +1,162 @@
+body {
+    background-color: antiquewhite;
+    font-family: "Roboto Mono", monospace;
+    margin: 0; /* Убрал отступы по умолчанию */
+}
+
+header {
+    background: linear-gradient(#fffafa, #faebd7);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+}
+
+a {
+    font-size: 40px;
+    padding: 20px;
+    color: #1b1b1b;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+li {
+    display: inline;
+}
+
+.athena img {
+    width: 100%;
+}
+
+.aboutMe h1 {
+    font-size: 100px;
+    text-align: center;
+    color: #58371a;
+}
+
+.columns-container {
+    display: flex;
+    width: 100%;
+    border-top: 2px solid rgb(117, 73, 36); 
+    border-bottom: 2px solid rgb(117, 73, 36); 
+}
+
+.column {
+    width: 50%; 
+    box-sizing: border-box;
+    padding: 20px;
+    border-right: 2px solid rgb(117, 73, 36); 
+    background-color: transparent;
+}
+
+.column:last-child {
+    border-right: none; 
+}
+
+.TextAboutMe, .TextAboutMe2 {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 0; 
+}
+
+.TextAboutMe img, .TextAboutMe2 img {
+    width: 400px;
+    height: 350px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.text-content h2 {
+    margin-top: 0;
+    font-size: 36px;
+    color: #58371a;
+}
+
+.text-content p {
+    text-align: justify;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.container {
+    height: 10vh;
+    color: rgb(235, 224, 202);
+    background-color: rgb(255, 241, 220);
+    position: relative;
+    text-transform: uppercase;
+    font-size: 120px;
+    font-weight: bold;
+    width: 100%;
+    overflow: hidden;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    white-space: nowrap;
+    display: inline-block;
+    transform: translateY(-50%);
+    animation: move 10s linear infinite;
+}
+/*Это я делала с ютубом, было интересно посмотреть. ИИ тоже пользовалась, когда не знала как сделать чтото, но в основном теги гуглила и применяла*/
+@keyframes move {
+    from { transform: translate(0, -50%); }
+    to   { transform: translate(-50%, -50%); }
+}
+
+.ys h1 {
+    font-size: 100px;
+    text-align: center;
+    color: #58371a;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px;                       
+    padding: 20px;
+}
+
+.card {
+    color: #58371a;
+    font-size: 30px;
+    flex: 1;              
+    text-align: center;   
+}
+
+.card img {
+    width: 100%;          
+    height: 300px;
+    object-fit: cover;    
+    display: block;
+}
+
+.card p {
+    margin-top: 10px;
+}
+
+.contacts {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #faebd7;
+    border-top: 2px solid #58371a;
+}
+
+.contacts h1 {
+    font-size: 60px;
+    color: #58371a;
+    margin-bottom: 20px;
+}
+
+.contacts p {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0;
+}
